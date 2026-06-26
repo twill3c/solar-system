@@ -1,0 +1,131 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #05060c;
+  color: #e9edf6;
+  font-family: system-ui, "Segoe UI", "Hiragino Kaku Gothic ProN", "Noto Sans JP",
+    sans-serif;
+  overflow: hidden;
+}
+
+.app-root {
+  position: fixed;
+  inset: 0;
+}
+
+.scene-layer,
+.scene-loading {
+  position: absolute;
+  inset: 0;
+}
+
+.scene-loading {
+  display: grid;
+  place-items: center;
+  color: #8a93a8;
+  font-size: 0.9rem;
+}
+
+.app-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding: 14px 18px;
+  pointer-events: none;
+}
+
+.app-title {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.app-subtitle {
+  margin: 2px 0 0;
+  font-size: 0.72rem;
+  color: #9aa3b8;
+}
+
+.planet-label {
+  font-size: 11px;
+  color: #cfd6e6;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+  white-space: nowrap;
+  user-select: none;
+}
+
+/* ── 操作 UI（下部オーバーレイ） ────────────────── */
+.controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 18px;
+  background: linear-gradient(to top, rgba(5, 6, 12, 0.92), rgba(5, 6, 12, 0));
+}
+
+.ctrl-label {
+  font-size: 0.74rem;
+  color: #aab2c6;
+}
+
+.ctrl-btn,
+.speed-btn {
+  cursor: pointer;
+  border: 1px solid #2c3550;
+  background: #131a2c;
+  color: #e9edf6;
+  border-radius: 7px;
+  padding: 7px 12px;
+  font-size: 0.78rem;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.ctrl-btn:hover,
+.speed-btn:hover {
+  background: #1c2540;
+}
+
+.speed-btn {
+  padding: 5px 9px;
+  font-size: 0.72rem;
+}
+
+.speed-btn.active {
+  background: #2d63d6;
+  border-color: #4f80d6;
+}
+
+.slider-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 260px;
+  flex: 1 1 260px;
+}
+
+.time-slider {
+  width: 100%;
+  accent-color: #4f80d6;
+}
+
+.speed-wrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
