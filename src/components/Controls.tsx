@@ -59,6 +59,15 @@ export default function Controls({ clock }: ControlsProps) {
           </button>
         ))}
       </div>
+
+      <a
+        className="app-menu-link"
+        href="https://app-menu-amber.vercel.app"
+        target="_blank"
+        rel="noopener"
+      >
+        App Menu
+      </a>
     </div>
   );
 }

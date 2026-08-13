@@ -129,3 +129,14 @@ body {
   align-items: center;
   gap: 6px;
 }
+
+.app-menu-link {
+  margin-left: auto;
+  font-size: 0.72rem;
+  color: #9aa3b8;
+  text-decoration: none;
+}
+
+.app-menu-link:hover {
+  color: #e9edf6;
+}
