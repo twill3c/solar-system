@@ -21,7 +21,7 @@ export default function SolarSystemApp() {
       <header className="app-header">
         <h1 className="app-title">太陽系シミュレーター</h1>
         <p className="app-subtitle">
-          時間スライダーで公転を進める可視化モデル（v1・円軌道）
+          時間スライダーで公転を進める可視化モデル（v1・円軌道）・📱 スマホ対応
         </p>
       </header>
 
