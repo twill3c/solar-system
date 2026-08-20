@@ -140,3 +140,15 @@ body {
 .app-menu-link:hover {
   color: #e9edf6;
 }
+
+/* fleet: fixed footer */
+footer.fleet-footer {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 9000;
+  margin: 0; padding: 8px 16px; text-align: center;
+  background: Canvas; color: CanvasText;
+  border-top: 1px solid rgba(128,128,128,.35);
+  backdrop-filter: blur(6px); font-size: 12px;
+}
+footer.fleet-footer a { color: inherit; }
+body { padding-bottom: 72px; }
+@media (max-width: 640px) { body { padding-bottom: 96px; } }

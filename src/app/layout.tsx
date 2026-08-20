@@ -14,7 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body>{children}</body>
+      <body>{children}
+        <footer class="fleet-footer"><p><a href="https://github.com/twill3c/solar-system/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a> © 2026 坂田哲朗 ・ <a href="https://github.com/twill3c/solar-system" target="_blank" rel="noopener">GitHub</a> ・ <a href="https://app-menu-amber.vercel.app" target="_blank" rel="noopener">App Menu</a></p></footer>
+      </body>
     </html>
   );
 }
