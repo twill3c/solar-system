@@ -150,5 +150,6 @@ footer.fleet-footer {
   backdrop-filter: blur(6px); font-size: 12px;
 }
 footer.fleet-footer a { color: inherit; }
+footer.fleet-footer p { margin: 0; }
 body { padding-bottom: 72px; }
 @media (max-width: 640px) { body { padding-bottom: 96px; } }
